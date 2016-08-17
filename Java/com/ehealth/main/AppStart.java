@@ -7,7 +7,12 @@ public class AppStart{
 
   public static void main(String[] args){
 
-
+    /**
+     * DEPTH FIRST TREE TRAVERSAL
+     * Depth First Search algorithm(DFS) traverses a graph in a depthward motion
+     * and uses a stack to remember to get the next vertex to start a search
+     * when a dead end occurs in any iteration.
+     */
     QuestionFactory questionFactory =  new QuestionFactory();
 
     /***
