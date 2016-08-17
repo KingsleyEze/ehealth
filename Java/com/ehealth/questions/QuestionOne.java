@@ -25,7 +25,9 @@ public class QuestionOne implements Question {
 
     @Override
     public void execute(){
+        
+      String result = findChars("something", "anything");
 
-      System.out.println(findChars("something", "anything"));
+      System.out.println(result);
     }
 }
