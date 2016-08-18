@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="contactBook">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book | Angular + PouchDB App</title>
+    <link type="stylesheet" href="assets/style/base.css"/>
+</head>
+<body>
+
+<div ng-controller="myCtrl">
+    <label for="contactName">Contact Name: </label> <br/><input type="text" id="contactName" ng-bind="contactName"/><button ng-click="addContact()">Add Contact</button>
+    <br/>
+    <ul id="contactList">
+      <li ng-repeat="name in contactList">{{name['doc']['name']}}</li>
+    </ul>
+</div>
+
+<script  src="assets/js/angular.js"></script>
+<script  src="assets/js/pouchdb-5.4.5.min.js"></script>
+<script  src="assets/js/base.js"></script>
+<script  src="assets/js/app.js"></script>
+</body>
+</html>
